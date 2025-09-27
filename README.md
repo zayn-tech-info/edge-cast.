@@ -1,4 +1,4 @@
-# EdgeCast
+# EdgeCast - Crypto Prediction Platform
 
 Welcome to the **EdgeCast Frontend** repository!
 
