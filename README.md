@@ -11,6 +11,9 @@ https://drive.google.com/file/d/1oMuvdHvAmuuV_aG60I96CmICK89uFdvP/view?usp=shari
 
 ---
 
+### Pitchdeck link 
+https://www.canva.com/design/DAG0KAST2RY/t3lKaRvO8smoy7JQDPNRYg/view?utm_content=DAG0KAST2RY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h036385765e
+
 ## Table of Contents
 
 - [Overview](#overview)
