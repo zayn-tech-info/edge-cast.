@@ -4,6 +4,11 @@ Welcome to the **EdgeCast Frontend** repository!
 
 This project is the frontend web application for EdgeCast, a platform hosted at [https://edge-cast-frontend.vercel.app](https://edge-cast-frontend.vercel.app). It is designed to provide a modern, responsive user experience for interacting with EdgeCast services.
 
+
+### Demo video link 
+
+https://drive.google.com/file/d/1oMuvdHvAmuuV_aG60I96CmICK89uFdvP/view?usp=sharing
+
 ---
 
 ## Table of Contents
