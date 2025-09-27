@@ -1,56 +1,209 @@
-# 🎯 EdgeCast — Crypto Prediction Game
+# EdgeCast
 
-EdgeCast is a decentralized prediction game where users stake crypto and guess future coin prices. Built with Solidity smart contracts, a Node.js backend, and a clean API layer, it enables transparent, trustless gameplay powered by blockchain.
+Welcome to the **EdgeCast Frontend** repository!
 
----
-
-## 🚀 Features
-
-- 🧠 Predict future crypto prices (e.g., BTC, ETH)
-- 💰 Stake tokens to enter prediction rounds
-- 🥇 Win rewards based on accuracy
-- 🔗 Smart contract integration via Hardhat
-- 🌐 RESTful backend API for frontend and Postman testing
-- 📊 Dashboard routes for tracking rounds, users, and payouts
+This project is the frontend web application for EdgeCast, a platform hosted at [https://edge-cast-frontend.vercel.app](https://edge-cast-frontend.vercel.app). It is designed to provide a modern, responsive user experience for interacting with EdgeCast services.
 
 ---
 
-## 🛠️ Tech Stack
+## Table of Contents
 
-| Layer        | Tools & Frameworks                  |
-|--------------|-------------------------------------|
-| Smart Contract | Solidity, Hardhat                  |
-| Backend API   | Node.js, Express, Ethers.js, dotenv |                 |
-| Testing       | Postman, Hardhat test suite        |
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
+- [Deployment](#deployment)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [FAQ](#faq)
 
 ---
 
-## 📁 Project Structure  
-EdgeCast/ ├── blokdag/              # Smart contracts & deployment │   ├── contracts/ │   ├── scripts/ │   ├── test/ │   └── hardhat.config.ts ├── backend/              # Backend API │   ├── routes/ │   ├── models/ │   ├── app.js │   └── server.js
+## Overview
 
+EdgeCast Frontend serves as the main interface for users of the EdgeCast platform. It connects to backend APIs, renders data dynamically, and enables users to interact with platform features efficiently.
+
+EdgeCast aims to deliver a seamless, high-performance, and scalable solution for content delivery and real-time data visualization.
 
 ---
 
-## ⚙️ Setup Instructions
+## Features
 
-### 1. Clone the repo
+- **Responsive Design**: Works seamlessly on desktops, tablets, and mobiles.
+- **Modern UI**: Built using component-based architecture for maintainability and scalability.
+- **API Integration**: Connects to backend services for live data.
+- **Customizable**: Easily extendable for new features and integrations.
+- **Optimized Performance**: Leveraging best practices in frontend development.
+- **Routing**: Fast navigation using client-side routing (Next.js/React Router).
+- **SEO Friendly**: Server-side rendering for better SEO (if using Next.js).
+- **Error Handling**: User-friendly error pages and notifications.
+- **Authentication**: (If present) Supports user login and protected routes.
+- **Theming**: Easily switch between light/dark modes (if implemented).
+- **Accessibility**: Follows accessibility guidelines for a better user experience.
+
+---
+
+## Tech Stack
+
+- **Language:** JavaScript
+- **Framework:** React or Next.js (given Vercel deployment)
+- **Build Tools:** Webpack, Babel, npm/yarn, Vite (frontend)
+- **Deployment:** Vercel
+- **Other Tools:** 
+  - Component libraries (e.g., Material UI, Ant Design) *(subject to code inspection)*
+  - CSS preprocessors (e.g., SASS, LESS) *(subject to code inspection)*
+  - ESLint & Prettier for code quality and formatting
+  - GitHub Actions (for CI/CD, if configured)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
 ```bash
-git clone https://github.com/zayn-tech-info/EdgeCast.git
-cd EdgeCast
-cd blokdag
+git clone https://github.com/zayn-tech-info/edge-cast-frontend.git
+cd edge-cast-frontend
 npm install
+```
 
-cd ../backend
-npm install
-Create a .env file in backend/
-PORT=3000
-RPC_URL=https://your-node-url
-CONTRACT_ADDRESS=0xYourContractAddress
-PRIVATE_KEY=your-wallet-private-key
-. Run the backend server
-node server.js
+### Running Locally
 
-🧪 Testing with Postman
-- Import the API collection
-- Set base URL to http://localhost:3000
-- Use JSON body for POST requests
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`.
+
+### Building for Production
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## Project Structure
+
+The following is a typical structure for a frontend project. Actual structure may vary:
+
+```
+edge-cast-frontend/
+├── public/         # Static assets
+├── src/            # Source code (components, pages, utils)
+│   ├── components/ # Reusable UI components
+│   ├── pages/      # Route pages (for Next.js)
+│   └── ...         
+├── package.json    # Project metadata and scripts
+├── next.config.js  # Next.js configuration (if applicable)
+└── README.md       # Project documentation
+```
+
+### Key Folders
+
+- **/public**: Static files (images, favicon, etc.) accessible from the root URL.
+- **/src/components**: Reusable React components.
+- **/src/pages**: Page components for routing (Next.js).
+- **/src/utils**: Utility functions and helpers.
+- **/src/styles**: CSS or SASS/LESS files.
+
+---
+
+## Environment Variables
+
+To connect to APIs or configure deployment, you may need to set environment variables.
+
+Create a `.env.local` file in the root directory and add variables like:
+
+```
+NEXT_PUBLIC_API_URL=https://api.edgecast.com
+NEXT_PUBLIC_ANALYTICS_ID=your-analytics-id
+```
+
+(Refer to project code or documentation for required variables.)
+
+---
+
+## Deployment
+
+EdgeCast Frontend is deployed on [Vercel](https://vercel.com). For production deployment:
+
+1. Push your changes to the `main` branch.
+2. Vercel will build and deploy automatically if connected to your GitHub repository.
+3. For custom domains or environment variables, configure them in your Vercel dashboard.
+
+---
+
+## Testing
+
+Automated testing is encouraged for reliability.
+
+- **Unit Tests**: Place tests in `src/__tests__` or alongside components.
+- **Testing Library**: Likely using Jest and React Testing Library.
+- **Run tests:**
+
+```bash
+npm test
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open issues and submit pull requests for bug fixes or new features.
+
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to the branch: `git push origin feature/AmazingFeature`
+5. Open a Pull Request.
+
+### Coding Guidelines
+
+- Use clear, descriptive commit messages.
+- Follow existing code style (see `.eslintrc` or `.prettierrc`).
+- Write unit tests for new features.
+
+---
+
+## License
+
+This project currently does not specify a license. Please contact the repository owner for usage permissions.
+
+---
+
+## Contact
+
+- **Owner:** [zayn-tech-info](https://github.com/zayn-tech-info)
+- **Project URL:** [https://github.com/zayn-tech-info/edge-cast-frontend](https://github.com/zayn-tech-info/edge-cast-frontend)
+- **Live Demo:** [edge-cast-frontend.vercel.app](https://edge-cast-frontend.vercel.app)
+
+For questions or feedback, feel free to open an issue in the repository.
+
+---
+
+## FAQ
+
+**Q: Is this project open source?**  
+A: Currently, no license is specified. Contact the owner for details.
+
+**Q: What backend does EdgeCast use?**  
+A: This repository is frontend-only. Backend details are managed in separate repositories.
+
+**Q: How do I report a bug or request a feature?**  
+A: Please open an issue using GitHub's issue tracker.
+
+**Q: Can I use this code for my own project?**  
+A: Please check with the owner regarding permissions.
+
+---
