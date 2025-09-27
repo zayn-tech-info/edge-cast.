@@ -2,7 +2,7 @@
 
 Welcome to the **EdgeCast Frontend** repository!
 
-This project is the frontend web application for EdgeCast, a platform hosted at [https://edge-cast-frontend.vercel.app](https://edge-cast-frontend.vercel.app). It is designed to provide a modern, responsive user experience for interacting with EdgeCast services.
+EDGECAST is a gamified crypto prediction platform where users stake any amount to guess future prices.
 
 
 ### App link
@@ -47,11 +47,12 @@ EdgeCast aims to deliver a seamless, high-performance, and scalable solution for
 
 - **Responsive Design**: Works seamlessly on desktops, tablets, and mobiles.
 - **Modern UI**: Built using component-based architecture for maintainability and scalability.
+- Smart Contract Integration: Built on BlockDag network
 - **API Integration**: Connects to backend services for live data.
 - **Customizable**: Easily extendable for new features and integrations.
 - **Optimized Performance**: Leveraging best practices in frontend development.
-- **Routing**: Fast navigation using client-side routing (Next.js/React Router).
-- **SEO Friendly**: Server-side rendering for better SEO (if using Next.js).
+- **Routing**: Fast navigation using client-side routing ( ).
+ 
 - **Error Handling**: User-friendly error pages and notifications.
 - **Authentication**: (If present) Supports user login and protected routes.
 - **Theming**: Easily switch between light/dark modes (if implemented).
@@ -61,13 +62,11 @@ EdgeCast aims to deliver a seamless, high-performance, and scalable solution for
 
 ## Tech Stack
 
-- **Language:** JavaScript
-- **Framework:** React or Next.js (given Vercel deployment)
+- **Language:** JavaScript, Solidity
+- **Framework:** ReactJs, Express JS, Tailwind CSS
 - **Build Tools:** Webpack, Babel, npm/yarn, Vite (frontend)
 - **Deployment:** Vercel
 - **Other Tools:** 
-  - Component libraries (e.g., Material UI, Ant Design) *(subject to code inspection)*
-  - CSS preprocessors (e.g., SASS, LESS) *(subject to code inspection)*
   - ESLint & Prettier for code quality and formatting
   - GitHub Actions (for CI/CD, if configured)
 
